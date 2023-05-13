@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'weatherApp';
   city:any = '';
+  passedData:any = '';
 
-  onInput(target:any){
-    this.city = target.value;
-  }
+ 
+
+ 
 }

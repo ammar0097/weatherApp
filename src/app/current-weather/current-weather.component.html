@@ -1,1 +1,2 @@
-<p>current-weather works! {{city}}</p>
+<input  type="text" name="city" id="city" (input)="onInput($event.target)">
+<button class="btn btn-primary" (click)="getWeather()">Search</button>
