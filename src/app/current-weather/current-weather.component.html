@@ -1,2 +1,7 @@
-<input  type="text" name="city" id="city" (input)="onInput($event.target)">
-<button class="btn btn-primary" (click)="getWeather()">Search</button>
+<div class="container">
+  <input type="text" name="city" id="city" (input)="onInput($event.target)" />
+  <button class="btn btn-primary" (click)="getWeather()">Search</button>
+  <p>{{ weatherData?.name }}</p>
+  <p>{{ weatherData?.weather[0].main }}</p>
+  <p>{{ weatherData?.weather[0].description }}</p>
+</div>
